@@ -1,0 +1,8 @@
+package model;
+
+
+public interface Query {
+    String ADD_MONEY_BY_ACCOUNT_ID = "UPDATE ACCOUNT SET MONEY = MONEY + ? WHERE ID = ?";
+    String CHARGE_MONEY_FORM_ACCOUNT ="UPDATE ACCOUNT SET MONEY = MONEY - ? WHERE ID = ?";
+    String CHECK_ACCOUNT_WAGES = "SELECT MONEY FROM ACCOUNT WHERE ID = ?";
+}
